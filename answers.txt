@@ -7,6 +7,7 @@ Answer1 :
 
 Answer2 :
 Whenever service B responds with Internal Server error with HTTP status code 500, I would expect that Service A maps the error to a meaningful error like Bad Gateway with HTTP status code : 500. Also, validate the proper error message as part of the response.
+The other approach I would take to design the test that if Service B returns 500 then will catch the exception and consider if Service A responds 502 Bad gateway then test would be considered ok.
 
 Answer3 :
 I would consider the solution as :
