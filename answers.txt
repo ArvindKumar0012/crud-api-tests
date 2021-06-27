@@ -1,1 +1,13 @@
 Answer1 :
+    I would use boundary value analysis technique to design the tests.
+    E.g.
+    If User is older than XX then as per boundary value analysis, I would test following :
+      1. User having age XX is unauthorized to use the resource.( Resource returns 403).
+      2. User having age XX+1 is authorized to use the resource. (Resouce returns 200).
+
+Answer2 :
+Whenever service B responds with Internal Server error with HTTP status code 500, I would expect that Service A maps the error to a meaningful error like Bad Gateway with HTTP status code : 500. Also, validate the proper error message as part of the response.
+
+Answer3 :
+I would consider the solution as :
+  Test Transfer-Service against a mock of Account-Guard-Service and do not use the real Account-Guard-Service at all as it must be properly tested by its provider.
