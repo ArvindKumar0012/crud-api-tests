@@ -1,0 +1,6 @@
+---
+base_uri: http://httpbin.org/
+get_path_uri: get
+put_path_uri: put
+delete_path_uri: delete
+post_path_uri: post
